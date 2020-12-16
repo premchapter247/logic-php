@@ -14,6 +14,7 @@
 12) create function to print only odd value 1 - 1,3 - 1,3,5
 13) circular prime number below 100 ex: 13 & 31
 14) pascal triangle
+15) Generate a random string from Specific string
 -------------------------
 
 */
@@ -446,3 +447,16 @@ $arr = array(0=>0,'a'=>'a',1=>1,'b'=>'b');
 sort($arr);
 
 print_r($arr);
+
+/*
+Generate a random string from Specific string
+*/
+$character = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKMLNOPQRSTUVWXYZ';
+$strlen = strlen($character);
+$randomstr = '';
+for($i=0 ;$i<15;$i++){
+	$randomstr .= $character[rand(0,$strlen)];
+}
+echo $randomstr;
+
+
