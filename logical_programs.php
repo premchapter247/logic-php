@@ -446,3 +446,20 @@ $arr = array(0=>0,'a'=>'a',1=>1,'b'=>'b');
 sort($arr);
 
 print_r($arr);
+
+/*
+Find a a maximum value from an array without using any php function
+
+*/
+
+$array = array(45,40,78,4,87,110,10);
+$temp = 0;
+for($i=0;$i<sizeOf($array);$i++){
+    if($array[$i]>$temp){
+        $temp = $array[$i];
+    }
+}
+echo $temp;
+
+
+
